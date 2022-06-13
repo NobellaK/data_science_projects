@@ -3,7 +3,7 @@ from random import randint
 
 user_action = input("Enter a choice (R, P, S): ")
 possible_actions = ["Rock", "Paper", "Scissors"]
-computer_action = possible_actions[randint(0,2)]
+computer_action = random.choice(possible_actions)
 
 print(f"\nYou chose {user_action}, computer chose {computer_action}.\n")
 
@@ -32,6 +32,7 @@ while player == False:
         print("Thats an invalid play. Check your input!")
     
     # Player was set to False so the loop continues
+
 
 
 
